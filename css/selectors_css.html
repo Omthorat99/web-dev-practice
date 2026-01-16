@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors in css</title>
+    <style>
+        /* p{color: red;}*/
+        .color {
+            background-color: white;
+            color: rgb(226, 43, 116);
+            font-size: xx-large;
+
+        }
+
+        .big {
+            background-color: yellow;
+            color: red;
+        }
+
+        .size {
+            font: bold;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        #change {
+            color-scheme: inherit;
+            color: red;
+            background-color: pink;
+        }
+
+        * {
+            margin: 0%;
+            padding: 0%;
+            background-color: lightpink;
+        }
+        div p{
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="color">Css in the selectors</h1>
+    <p class="big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum hic porro sequi sint nesciunt odit
+        rem,
+        voluptatibus perspiciatis quam necessitatibus tempora at ea eaque doloremque perferendis animi dolor quia
+        provident! Eaque provident, dolore optio voluptatibus recusandae perferendis nemo eius esse atque ipsum at
+        corrupti cupiditate.</p>
+    <h2 class="size">Element selector in css</h2>
+    <p id="change">Element selector select all the element</p>
+
+    <div>
+        <p>this is only for example perpose </p>
+    </div>
+</body>
+
+</html>
