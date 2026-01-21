@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        /* .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "sidebar content"
+                "footer footer";
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: auto 1fr auto;
+        } */
+/* 
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+} */
+        .container1 {
+            display: grid;
+            border: 2px solid salmon;
+            background-color: azure;
+            grid-template-columns: 200px repeat(5, 1fr);
+            grid-template-rows: 1r 1fr;
+            gap: 50px;
+            grid-column: 1/3;
+            grid-row: 1/3;
+        }
+
+
+
+
+        .box {
+            background-color: bisque;
+            border: 2px solid red;
+            /* grid-column: 1/3;
+            grid-row: 1/3;*/
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="box" class="box1">
+            I am box 1
+        </div>
+        <div class="box">
+            I am box 1
+        </div>
+        <div class="box">
+            I am box 1
+        </div>
+        <div class="box">
+            I am box 1
+        </div>
+        <div class="box">
+            I am box 1
+        </div>
+        <div class="box">
+            I am box 1
+        </div>
+
+
+    </div>
+</body>
+
+</html>
