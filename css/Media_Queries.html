@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .container {
+            width: 122vw;
+            background-color: rgb(155, 18, 219);
+        }
+
+        .box {
+            width: 15vw;
+            background-color: rgb(214, 143, 21);
+            margin: 10px;
+        }
+
+        @media (max-width: 600px) and (min-width : 200px) {
+            body {
+                background-color: red;
+
+
+            }
+
+        }
+
+        /* @media (min-width: 600px) and (max-width: 1024px) {
+  .sidebar {
+    display: none;
+  }
+} */
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+
+    </div>
+
+</body>
+
+</html>
