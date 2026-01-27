@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Variables and Custom Properties</title>
-</head>
-<body>
-    <div class="container">
-        <div>Box1</div>
-        <div>Box2</div>
-        <div>Box3</div>
-        <div>Box4</div>
-    </div>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Variables and Custom Properties</title>
 
+<style>
+:root{
+  --primary-color: red;
+  --font-size: 16px;
+  --box-bg: beige;
+  --text-color : rgb(204, 139, 224);
+
+  
+}
+
+.container{
+  /* background-color: pink; */
+  background-color: var(--primary-color);
+  font-size: var(--font-size);
+  color:var(--text-color);
+}
+
+.box{
+  background-color: var(--box-bg);
+  color: black;
+   margin: 45px;
+   color:var(--text-color);
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+  <div class="box">Box1</div> 
+  <div class="box">Box2</div>                                                         
+  <div class="box">Box3</div>
+  <div class="box">Box4</div>
+</div>
 </body>
 </html>
