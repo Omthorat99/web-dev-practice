@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Transition Demo</title>
+<style>
+    .container{
+        background-color: rgb(200, 20, 59);
+        /* padding: 10px;
+        width: 300px; */
+    }
+
+    .box{
+        background-color: aqua;
+        height: 40px;
+        width: 40px;
+        border: 2px solid gray;
+        margin: 6px 0;
+        padding: 5px;
+        box-sizing: border-box;
+        display: block;
+
+        /* transition: width 0.5s ease-in 3s; */
+        /* cursor: pointer; */
+
+        animation: first 2.5s ease 2.2s 5 both normal;
+    }
+    @keyframes first {
+        from{
+            width: 45px;
+        }
+        to{
+            width: 45vw;
+        }
+        
+    }
+
+    /* .box:hover{
+        width: 200px;
+    } */
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+    <div class="box">Box 4</div>
+    <div class="box">Box 5</div>
+</div>
+</body>
+</html>
