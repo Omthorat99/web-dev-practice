@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        console.log("Welecome to array")
+        // let arr = [5, 33]
+        // console.log(arr);
+        // arr.push("yellow")//Add item at the end
+        // arr.pop();//Remove last item
+        // arr.shift();//Remove the first item
+        // arr.unshift("om");//Add the item at the beginning
+
+        // let student = [{ name: "om", class: "16" }, { name: "harry", class: "soc16" },{ name: "sarthek", class:"20"}];
+        // console.log(student);
+
+        // Using for loop:
+        // let fruits = ["apple", "banana", "mango"];
+        // for (let i = 0; i < fruits.length; i++) {
+        //     console.log(fruits[i]);
+        // }
+
+
+        // Using for...of loop:
+        // for (let fruit of fruits) {
+        //     console.log(fruit);
+        // }
+
+
+        //         map() – Transform Array
+        // Creates a new array by applying a function to each item.
+
+        let numbers = [1, 2, 3];
+        let doubled = numbers.map(num => num * 2);
+        console.log(doubled);
+
+        //         filter() – Filter Items
+        // Returns a new array of items that match a condition.
+
+        let scores = [30, 50, 90, 20];
+        let passed = scores.filter(score => score >= 50);
+        console.log(passed); // [50, 90]
+
+
+        //other useful methods
+        let names = ["Ali", "Sara", "John"];
+        console.log(names.includes("Sara")); // true
+        console.log(names.indexOf("John"));  // 2
+        console.log(names.join(" - "));      // Ali - Sara - John
+    </script>
+    <style>
+        * {
+            background-color: rgb(247, 253, 228);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The Arrays in the javaScript</h1>
+    <P>you can go in console and check</P><br><br>
+    <pre style="border: 2px solid black ;
+    background-color: antiquewhite;">
+        Summary
+Arrays store lists of data in one variable.
+Use indexing to access or update items.
+Common methods like push, pop, map, filter make array handling easier.
+Looping is essential for displaying or processing lists.
+    </pre>
+
+
+</body>
+
+</html>

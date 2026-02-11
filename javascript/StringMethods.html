@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String methods</title>
+    <script>
+        console.log("String Methods")
+        let name = "om";
+        console.log(name.toUpperCase())//convert string to uppercase
+        console.log(name.toLowerCase())//convert string to lowercase
+        console.log(name.length);       //Returns the number of characters in the string.
+
+
+
+        let input = "  Hello World  "; //Removes extra whitespace from both ends of a string.
+        console.log(input.trim());
+
+
+        let msg = "Learn JavaScript";//Checks if a string contains another string.
+        console.log(msg.includes("Java")); // true
+        console.log(msg.includes("Python")); // false
+
+        let str = "banana";//Returns the index of the first/last occurrence of a substring. Returns -1 if not found.
+        console.log(str.indexOf("a")); // 1
+        console.log(str.lastIndexOf("a")); // 5
+
+        let msg1 = "I love Python";
+        console.log(msg1.replace("Python", "JavaScript")); // "I love JavaScript"
+
+
+        let wow = "ha";
+        console.log(wow.repeat(3)); // "hahaha"
+
+
+    </script>
+</head>
+
+<body>
+    String methods
+</body>
+
+</html>

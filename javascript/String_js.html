@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+    <script>
+        let single = 'Hello';
+        let double = "World";
+        let template = `Hello World`;
+        console.log(single)
+        console.log(double)
+        console.log(template)
+
+        let message = "Welcome to JavaScript!";
+        let name = 'Salman';
+        console.log(message)
+        console.log(name)
+        console.log(name.length)//string length
+
+        let text = "Line 1\nLine 2\nLine 3";//for multiple strings
+        console.log(text);
+
+        let firstName = "Salman";
+        let lastName = "Khan";
+        let fullName = firstName + " " + lastName;
+        console.log(fullName); // "Salman Khan"
+
+        let word = "JavaScript";
+        console.log(word[0]);
+        console.log(word[4]);
+
+
+        //Using template literals (backticks):
+        let multiline = `This is line 1
+                         This is line 2
+                         This is line 3`;
+        console.log(multiline);
+    </script>
+    <style>
+        h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: 2px solid black;
+            background-color: aquamarine;
+        }
+
+        pre {
+            border: 2px solid black;
+            background-color: rgb(222, 225, 207);
+            height: 90px;
+            font-size: larger;
+        }
+
+        * {
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="h1">String in the javascript</h1>
+
+    <pre class="pre">A string is a sequence of characters used to represent text.
+It can contain letters, numbers, symbols, or even be empty.
+
+In JavaScript, strings are written inside single quotes, double quotes, or backticks.</pre>
+
+</body>
+
+</html>
