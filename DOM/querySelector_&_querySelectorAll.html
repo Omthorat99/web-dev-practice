@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementsByTagName</title>
+    <style>
+        .black{
+            background-color: bisque;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+    <div id="box1" class="box">Box 1 </div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+    <button onclick="magic()">Do the magic</button>
+    </div>
+
+    <script>
+        function magic(){
+            // let elems = document.querySelector(".box")
+            let elems = document.querySelectorAll(".box")
+            console.log(elems)
+        }
+
+
+          
+    </script>
+</body>         
