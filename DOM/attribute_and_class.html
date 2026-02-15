@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribut_and_class</title>
+    <style>
+        .om{
+            background-color: rgb(131, 132, 138);
+            width: 500px;
+            margin: auto;
+            padding: 50px;
+        }
+        .blue{
+            padding: 50px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="welcome">welcome to my form</div>
+        <form actions="">
+            <input type="text" id="username" value="Harry">
+            <input id="submit" type="submit" value="submit">
+
+        </form>
+    </div>
+    <div class="container">
+        <img id="image" src="https://images.pexels.com/photos/33563161/pexels-photo-33563161.jpeg?
+        _gl=1*p77x4b*_ga*MTkyNDczNTc4NS4xNzY4NTY5Nzcx*_ga_8JE65Q40S6*czE3NzExNjc5NDMkbzE0JGcxJHQxNz
+        cxMTY3OTQ5JGo1NCRsMCRoMA.." alt="image" width="400px">
+
+        <button id="btn" onclick="func1()">change color</button>
+
+            </div>
+        <script>
+            const img = document.getElementById("image");
+            img.setAttribute("alt","om")
+            // img.removeAttribute("alt")//remove the alt
+            img.classList.add("om");//add class
+
+            function func1(){
+                img.classList.remove("om");
+                img.classList.toggle("blue")// toggle is used to add a class if it doesn't exist, or remove it if it does.
+
+                if(img.classList.contains("blue")){
+                    document.getElementById("btn").innerText="Remove Blue"
+                }
+                else{
+                    document.getElementById("btn").innerText = "Add Blue";
+                }
+            }
+
+        </script>
+</body>
+
+</html>

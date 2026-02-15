@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerHTMl and Values</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="welcome">Welcome to the my form </div>
+        <form action="">
+            <input type="text" id="hello" value="Type anything">
+            <input id="name" type="submit" value="submit">
+        </form>
+    </div>
+    <script>
+        const welcome = document.getElementById("welcome")
+        console.log(welcome)
+        // welcome.innerHTML = "<h1>Enter anything you want</h1>"
+        welcome.textContent = "Fill the form"
+
+        const input = document.getElementById("hello")
+        input.value = "Om is a good boy"
+        console.log(input.value)
+
+        welcome.style.backgroundColor = "pink";
+        welcome.style.fontSize = "30px"
+
+    </script>
+
+</body>
+
+</html>
