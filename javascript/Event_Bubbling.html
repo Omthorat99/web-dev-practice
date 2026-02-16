@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Example</title>
+
+    <style>
+        .box {
+            height: 55px;
+            width: 344px;
+            background-color: pink;
+            padding: 34px;
+            margin: 34px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="box1" class="box">Box 1</div>
+        <div id="box2" class="box">Box 2</div>
+        <div id="box3" class="box">Box 3</div>
+    </div>
+
+    <script>
+        // Select all boxes
+        let boxes = document.querySelectorAll(".box");
+
+        // Add click event to each box
+        boxes.forEach((box) => {
+            box.addEventListener("click", (e) => {
+                console.log(box.id + " clicked");
+                e.stopPropagation(); // prevent container event
+            });
+        });
+
+        // Container event
+        document.querySelector(".container").addEventListener("click", () => {
+            console.log("Container was clicked");
+        });
+    </script>
+
+</body>
+
+</html>

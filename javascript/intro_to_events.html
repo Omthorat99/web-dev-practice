@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <span id="firstspan">I am span</span><br>
+        <input id="input" type="text" placeholder="Information">
+     </div>
+
+        <script>
+            //click event
+            const firstspan = document.getElementById("firstspan");
+
+            firstspan.addEventListener("click", () => { alert("hey") });
+
+
+            //keyup event
+            const input = document.getElementById("input");
+            input.addEventListener("keyup", () => {
+                alert("Give proper information");
+                console.log(event.key)//show everything you type in box
+            });
+
+
+            //mouseover event
+            const box = document.querySelector('.box');//when mouse over to the first box then box will highlight
+            box.addEventListener('mouseover', () => {
+                box.style.backgroundColor = 'lightblue';
+            });
+            box.addEventListener('mouseout', () => {
+                box.style.backgroundColor = '';
+            });
+
+        </script>
+</body>
+
+</html>
