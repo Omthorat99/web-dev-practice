@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Time and Interval Demo</title>
+</head>
+<body>
+
+  <h2>Time and Interval Example</h2>
+  <button onclick="start()">Start</button>
+
+  <h3 id="output"></h3>
+
+  <script>
+    function start() {
+
+      document.getElementById("output").innerText = "Program Started";
+
+      // setTimeout (runs once after 3 sec)
+      setTimeout(function () {
+        document.getElementById("output").innerText += "\nTimeout after 3 seconds";
+      }, 3000);
+
+      // setInterval (runs every 1 sec)
+      var count = 0;
+
+      var interval = setInterval(function () {
+        count++;
+
+        document.getElementById("output").innerText += "\nInterval Count: " + count;
+
+        if (count === 5) {
+          clearInterval(interval);
+          document.getElementById("output").innerText += "\nInterval Stopped";
+        }
+
+      }, 1000);
+    }
+  </script>
+
+</body>
+</html>

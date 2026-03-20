@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LocalStorage Demo</title>
+</head>
+<body>
+
+<h2>Student Form</h2>
+
+<form id="myForm">
+    <input type="text" id="name" placeholder="Enter your name" required>
+    <button type="submit">Submit</button>
+</form>
+
+<h3 id="output"></h3>
+
+<script>
+  
+    document.getElementById("myForm").addEventListener("submit", function() {
+        let userName = document.getElementById("name").value;
+
+      
+        localStorage.setItem("username", userName);
+    });
+
+    window.onload = function() {
+        let savedName = localStorage.getItem("username");
+
+        if (savedName) {
+            document.getElementById("output").innerText = "Saved Name: " + savedName;
+        }
+    };
+</script>
+
+</body>
+</html>

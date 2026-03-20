@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Try Catch Demo</title>
+</head>
+<body>
+
+  <h2>Enter Age</h2>
+
+  <input type="number" id="age">
+  <button onclick="checkAge()">Check</button>
+
+  <h3 id="result"></h3>
+
+  <script>
+
+    function checkAge() {
+
+      try {
+        let age = document.getElementById("age").value;
+
+        // validation
+        if (age === "") {
+          throw "Age is required!";
+        }
+
+        if (age < 18) {
+          throw "You are underage!";
+        }
+
+        // success
+        document.getElementById("result").innerText = "You are eligible ✅";
+
+      } catch (error) {
+
+     
+        document.getElementById("result").innerText = "Error: " + error;
+
+      } finally {
+
+        console.log("Check completed");
+
+      }
+    }
+
+
+   
+    
+    setTimeout(() => {
+      console.log("Welcome after 3 seconds");
+    }, 3000);
+
+
+    
+    setInterval(() => {
+      console.log("App running...");
+    }, 5000);
+
+  </script>
+
+</body>
+</html>
