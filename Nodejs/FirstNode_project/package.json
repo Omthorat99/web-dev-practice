@@ -1,0 +1,16 @@
+{
+  "name": "first-pakage",
+  "version": "1.0.0",
+  "description": "test pakage",
+  "license": "ISC",
+  "author": "om",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "lodash": "^4.17.23"
+  }
+}
